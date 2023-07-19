@@ -212,7 +212,7 @@ STORED AS TEXTFILE
 TBLPROPERTIES ("skip.header.line.count"="1");
 ```
 
-После создания таблиц мы переместим туда наши данные из HDFS:
+**После создания таблиц мы переместим туда наши данные из HDFS:**
 ```sql
 LOAD DATA INPATH '/user/student/kursovaya/orders.csv' INTO TABLE kursdb.orders;
 LOAD DATA INPATH '/user/student/kursovaya/couriers.csv' INTO TABLE kursdb.orders;
@@ -223,7 +223,7 @@ LOAD DATA INPATH '/user/student/kursovaya/products.csv' INTO TABLE kursdb.orders
 ```
 
 
-**После этого данные идут по двум путям:**
+# 1.3 После этого данные идут по двум путям:
 
 1.	Данные идут в PySpark с помощью SparkSQL для дальнейшего анализа
 
